@@ -1,1 +1,3 @@
-# docs
+# 发布
+
+`npm run deploy`
