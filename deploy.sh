@@ -16,5 +16,5 @@ git init
 git add -A
 git commit -m 'deploy'
 
-# 如果发布到 https://<amjanney>.github.io
+# 如果发布到 https://amjanney.github.io
 git push -f https://github.com/amjanney/amjanney.github.io.git master
