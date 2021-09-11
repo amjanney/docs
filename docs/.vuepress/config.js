@@ -1,41 +1,131 @@
 module.exports = {
-  title: '文档',
-  description: '开发文档,持续更新中....',
+  title: '朽木白空间',
+  description: '',
   themeConfig: {
     sidebarDepth: 1,
     lastUpdated: '上次更新',
-    repo: 'https://github.com/amjanney.github.io',
+    repo: 'https://github.com/amjanney/docs.git',
     repoLabel: '查看源码',
+    logo: '/logo.png',
     docsDir: 'docs',
     editLinks: true,
-    editLinkText: '帮助我们改善此页面！',
+    editLinkText: '参与文档维护',
+    head: [
+      [
+        'link',
+        {
+          rel: 'icon',
+          href: '/favicon.ico',
+        },
+      ],
+    ],
     nav: [
       {
-        text: '文档',
-        link: '/guide/',
+        text: '指南',
+        link: '/guide/about-me/',
       },
       {
-        text: '前端',
-        link: '/guide/frontend'
+        text: '面经',
+        link: '/interview/css/',
       },
       {
-        text: '更新日志',
-        link: '/guide/logs'
+        text: '技术专题',
+        link: '/subject/',
       },
     ],
     sidebar: {
       '/guide/': [
         {
-          title: '文档',
+          title: '关于博主',
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            '',
-            'frontend',
-            'logs',
-          ]
-        }
+            {
+              path: '/guide/about-me/',
+              title: '简介',
+            },
+          ],
+        },
+        {
+          title: '关于文章',
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            {
+              path: '/guide/about-page/',
+              title: '简介',
+            },
+          ],
+        },
       ],
-    }
+      '/interview/': [
+        {
+          title: 'css',
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            {
+              path: '/interview/css/',
+              title: '简介',
+            },
+          ],
+        },
+        {
+          title: 'javascript',
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            {
+              path: '/interview/javascript/',
+              title: '简介',
+            },
+          ],
+        },
+        {
+          title: 'vue',
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            {
+              path: '/interview/vue/',
+              title: '简介',
+            },
+          ],
+        },
+        {
+          title: 'react',
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            {
+              path: '/interview/react/',
+              title: '简介',
+            },
+          ],
+        },
+        {
+          title: 'webpack',
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            {
+              path: '/interview/webpack/',
+              title: '简介',
+            },
+          ],
+        },
+        {
+          title: '算法',
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            {
+              path: '/interview/arithmetic/',
+              title: '简介',
+            },
+          ],
+        },
+      ],
+    },
   },
-}
+};

@@ -1,15 +1,15 @@
 ---
 home: true
-heroText: 测试测试
-tagline: 开发文档,持续更新中13....
+heroText: 朽木白空间
+tagline: 个人知识仓库，持续更新中....
 actionText: 快速开始 →
 actionLink: /guide/
 features:
-  - title: 简洁至上
-    details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-  - title: Vue驱动
-    details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-  - title: 高性能
-    details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
-footer: MIT Licensed | Copyright © 2021-present tiku-ui
+  - title: 面试宝典
+    details: 汇集了大厂面试宝典，让你轻松获得大厂offer
+  - title: 技术沉淀
+    details: 汇集了各个技术栈的知识点，带你走进一个全新的前端之旅程
+  - title: 大牛推荐
+    details: 想进好公司没渠道，没关系，在这里你可以找到你满意的公司
+footer: MIT Licensed | Copyright © 2021-present xiumubai
 ---
