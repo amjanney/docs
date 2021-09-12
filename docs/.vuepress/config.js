@@ -79,6 +79,10 @@ module.exports = {
               path: '/interview/javascript/数据类型/',
               title: '数据类型',
             },
+            {
+              path: '/interview/javascript/深拷贝和浅拷贝/',
+              title: '深拷贝和浅拷贝',
+            },
           ],
         },
         {
