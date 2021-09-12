@@ -62,7 +62,7 @@ module.exports = {
         {
           title: 'css',
           collapsable: false,
-          sidebarDepth: 2,
+          sidebarDepth: 1,
           children: [
             {
               path: '/interview/css/',
@@ -73,11 +73,11 @@ module.exports = {
         {
           title: 'javascript',
           collapsable: false,
-          sidebarDepth: 2,
+          sidebarDepth: 1,
           children: [
             {
-              path: '/interview/javascript/',
-              title: '简介',
+              path: '/interview/javascript/数据类型/',
+              title: '数据类型',
             },
           ],
         },
@@ -122,6 +122,17 @@ module.exports = {
             {
               path: '/interview/arithmetic/',
               title: '简介',
+            },
+          ],
+        },
+        {
+          title: 'http',
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            {
+              path: '/interview/http/',
+              title: 'HTTP2.0',
             },
           ],
         },
