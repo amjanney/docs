@@ -69,3 +69,7 @@ module.exports = function clone(target) {
   }
 };
 ```
+
+现在你的代码又向合格迈进了一小步。
+
+## 循环引用
