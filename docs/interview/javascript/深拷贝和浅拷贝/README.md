@@ -52,7 +52,7 @@ function clone(target) {
 
 这是一个最基础版本的深拷贝，这段代码可以让你向面试官展示你可以用递归解决问题，但是显然，他还有非常多的缺陷，比如，还没有考虑数组。
 
-[coding](https://github.com/amjanney/docs/blob/master/demo/javaScript/deepclone/test1.js)
+[coding](https://github.com/amjanney/docs/blob/master/demo/javaScript/deepclone/src/clone_1.js)
 
 ## 考虑数组
 
@@ -74,7 +74,7 @@ module.exports = function clone(target) {
 
 现在你的代码又向合格迈进了一小步。
 
-[coding](https://github.com/amjanney/docs/blob/master/demo/javaScript/deepclone/test2.js)
+[coding](https://github.com/amjanney/docs/blob/master/demo/javaScript/deepclone/src/clone_2.js)
 
 ## 循环引用
 
@@ -124,7 +124,7 @@ function clone(target, map = new Map()) {
 }
 ```
 
-[coding](https://github.com/amjanney/docs/blob/master/demo/javaScript/deepclone/test3.js)
+[coding](https://github.com/amjanney/docs/blob/master/demo/javaScript/deepclone/src/clone_3.js)
 
 接下来，我们可以使用，[WakeMap](https://es6.ruanyifeng.com/?search=wakemap&x=0&y=0#docs/set-map#WeakMap) 提代 Map 来使代码达到画龙点睛的作用。
 
@@ -200,4 +200,4 @@ function clone(target, map = new WeakMap()) {
 
 到这里，你已经向面试官展示了，在写代码的时候你会考虑程序的运行效率，并且你具有通用函数的抽象能力。
 
-[coding](https://github.com/amjanney/docs/blob/master/demo/javaScript/deepclone/test4.js)
+[coding](https://github.com/amjanney/docs/blob/master/demo/javaScript/deepclone/src/clone_4.js)
