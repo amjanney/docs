@@ -1,4 +1,5 @@
-function clone(target) {
+// 基础版本 只考虑对象的拷贝
+module.exports = function clone(target) {
   if (typeof target === 'object') {
     let cloneTarget = {};
     for (const key in target) {
@@ -8,18 +9,4 @@ function clone(target) {
   } else {
     return target;
   }
-}
-
-// 测试代码
-
-const target = {
-  field1: 1,
-  field2: undefined,
-  field3: 'ConardLi',
-  field4: {
-    child: 'child',
-    child2: {
-      child2: 'child2',
-    },
-  },
 };
