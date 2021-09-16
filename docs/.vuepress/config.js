@@ -91,8 +91,12 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             {
-              path: '/interview/vue/',
-              title: '简介',
+              path: '/interview/vue/diff算法/',
+              title: 'diff算法',
+            },
+            {
+              path: '/interview/vue/key的作用/',
+              title: 'key的作用',
             },
           ],
         },
