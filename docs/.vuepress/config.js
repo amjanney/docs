@@ -144,6 +144,17 @@ module.exports = {
             },
           ],
         },
+        {
+          title: '设计模式',
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            {
+              path: '/interview/design-pratterns/',
+              title: 'design-pratterns',
+            },
+          ],
+        },
       ],
     },
   },
