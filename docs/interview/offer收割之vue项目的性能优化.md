@@ -140,7 +140,7 @@ attempt: 1
 
 （3）在 vue 文件中将 img 标签的 src 属性直接改为 v-lazy ，从而将图片显示方式更改为懒加载显示：
 
-<img v-lazy="/static/img/1.png">
+`<img v-lazy="/static/img/1.png">`
 以上为 vue-lazyload 插件的简单使用，如果要看插件的更多参数选项，可以查看 vue-lazyload 的 github 地址。
 
 **1.7、路由懒加载**
@@ -417,4 +417,4 @@ Chrome 的 Performance 面板可以录制一段时间内的 js 执行细节及�
 
 点击 Stop 停止录制
 
-## 原文地址：https://blog.csdn.net/qq_37939251/article/details/100031285
+[原文地址](https://blog.csdn.net/qq_37939251/article/details/100031285)

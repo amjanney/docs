@@ -1,11 +1,15 @@
-const head = require('./config/head');
-
 module.exports = {
   title: '朽木白知识天地',
   base: '/',
   description:
     '朽木白的学习基地是朽木白的个人博客，用于记录学习笔记、分享音乐、书籍、旅行等个人兴趣的站点。',
-  head,
+  head: [
+    'link',
+    {
+      rel: 'icon',
+      href: '/favicon.ico',
+    },
+  ],
   themeConfig: {
     lastUpdated: '上次更新',
     logo: '/logo.png',
@@ -55,6 +59,7 @@ module.exports = {
         'offer收割机之计算机网络篇',
         'offer收割之算法篇',
       ],
+      '/about/': [''],
     },
   },
 };
