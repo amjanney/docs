@@ -55,7 +55,6 @@ module.exports = {
         'offer收割机之性能优化篇',
         'offer收割机之前端工程化篇',
         'offer收割机之浏览器原理篇',
-        'offer收割机之HTTP原理篇',
         'offer收割机之计算机网络篇',
         'offer收割之算法篇',
       ],
