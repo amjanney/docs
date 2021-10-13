@@ -153,7 +153,7 @@ DNS 劫持由于涉嫌违法，已经被监管起来，现在很少会有 DNS �
 
 **Chrome 浏览器的架构图**：
 
-![image](https://cdn.nlark.com/yuque/0/2020/png/1500604/1603803289911-191cabf3-e7e2-4354-a83d-858668cc116f.png)
+<!-- ![image](https://cdn.nlark.com/yuque/0/2020/png/1500604/1603803289911-191cabf3-e7e2-4354-a83d-858668cc116f.png) -->
 
 从图中可以看出，最新的 Chrome 浏览器包括：
 
@@ -190,7 +190,7 @@ DNS 劫持由于涉嫌违法，已经被监管起来，现在很少会有 DNS �
 
 浏览器的渲染进程的线程总共有五种：
 
-![image](https://cdn.nlark.com/yuque/0/2020/png/1500604/1603803289922-6462f252-aa33-4cf6-b541-d8bc2e285125.png)
+<!-- ![image](https://cdn.nlark.com/yuque/0/2020/png/1500604/1603803289922-6462f252-aa33-4cf6-b541-d8bc2e285125.png) -->
 
 **（1）GUI 渲染线程**
 
@@ -349,11 +349,12 @@ self.addEventListener('fetch', e => {
 
 打开页面，可以在开发者工具中的 `Application` 看到 Service Worker 已经启动了：
 
-![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615478097248-5e3c9a93-5683-41de-8787-e87705d31fe1.png?x-oss-process=image%2Fresize%2Cw_1500)
+<!-- ![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615478097248-5e3c9a93-5683-41de-8787-e87705d31fe1.png?x-oss-process=image%2Fresize%2Cw_1500) -->
 
 在 Cache 中也可以发现所需的文件已被缓存：
 
-![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615477994804-e7eaa2c7-91bf-406d-b024-5add76d37d5e.png)
+<!--
+![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615477994804-e7eaa2c7-91bf-406d-b024-5add76d37d5e.png) -->
 
 ## 三、浏览器缓存
 
@@ -367,7 +368,7 @@ self.addEventListener('fetch', e => {
 - 服务器收到请求后，优先根据 Etag 的值判断被请求的文件有没有做修改，Etag 值一致则没有修改，命中协商缓存，返回 304；如果不一致则有改动，直接返回新的资源文件带上新的 Etag 值并返回 200；
 - 如果服务器收到的请求没有 Etag 值，则将 If-Modified-Since 和被请求文件的最后修改时间做比对，一致则命中协商缓存，返回 304；不一致则返回新的 last-modified 和文件并返回 200；
 
-![业务流程图1.png](https://cdn.nlark.com/yuque/0/2021/png/1500604/1618399660902-60a33dae-cedc-4bd0-9a5b-160c5da3f516.png)
+<!-- ![业务流程图1.png](https://cdn.nlark.com/yuque/0/2021/png/1500604/1618399660902-60a33dae-cedc-4bd0-9a5b-160c5da3f516.png) -->
 
 很多网站的资源后面都加了版本号，这样做的目的是：每次升级了 JS 或 CSS 文件后，为了防止浏览器进行缓存，强制改变版本号，客户端浏览器就会重新下载新的 JS 或 CSS 文件 ，以保证用户能够及时获得网站的最新更新。
 
@@ -537,7 +538,7 @@ HTML 和 CSS 规范中规定了浏览器解释 html 文档的方式，由 W3C �
 
 大致过程如图所示：
 
-![image](https://cdn.nlark.com/yuque/0/2020/png/1500604/1603797939165-3bf54e28-5469-4093-a0e1-e0569cec1305.png)
+<!-- ![image](https://cdn.nlark.com/yuque/0/2020/png/1500604/1603797939165-3bf54e28-5469-4093-a0e1-e0569cec1305.png) -->
 
 **注意：**这个过程是逐步完成的，为了更好的用户体验，渲染引擎将会尽可能早的将内容呈现到屏幕上，并不会等到所有的 html 都解析完成之后再去构建和布局 render 树。它是解析完一部分内容就显示一部分内容，同时，可能还在通过网络下载其余内容。
 
@@ -1334,7 +1335,7 @@ socket.listen(server).on('connection', function(client) {
 
 两者区别如图示：
 
-![image](https://cdn.nlark.com/yuque/0/2020/jpeg/1500604/1605256274960-50bd9e69-dde9-4782-b2c0-6afc8188fca2.jpeg)
+<!-- ![image](https://cdn.nlark.com/yuque/0/2020/jpeg/1500604/1605256274960-50bd9e69-dde9-4782-b2c0-6afc8188fca2.jpeg) -->
 
 正向代理和反向代理的结构是一样的，都是 client-proxy-server 的结构，它们主要的区别就在于中间这个 proxy 是哪一方设置的。在正向代理中，proxy 是 client 设置的，用来隐藏 client；而在反向代理中，proxy 是 server 设置的，用来隐藏 server。
 
@@ -1461,7 +1462,7 @@ document.addEventListener("click", function(e) {
 
 因为 js 是单线程运行的，在代码执行时，通过将不同函数的执行上下文压入执行栈中来保证代码的有序执行。在执行同步代码时，如果遇到异步事件，js 引擎并不会一直等待其返回结果，而是会将这个事件挂起，继续执行执行栈中的其他任务。当异步事件执行完毕后，再将异步事件对应的回调加入到一个任务队列中等待执行。任务队列可以分为宏任务队列和微任务队列，当当前执行栈中的事件执行完毕后，js 引擎首先会判断微任务队列中是否有任务可以执行，如果有就将微任务队首的事件压入栈中执行。当微任务队列中的任务都执行完成后再去执行宏任务队列中的任务。
 
-![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615476500217-472563e1-de67-403f-baa7-0fd574d0e618.png?x-oss-process=image%2Fresize%2Cw_1500)
+<!-- ![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615476500217-472563e1-de67-403f-baa7-0fd574d0e618.png?x-oss-process=image%2Fresize%2Cw_1500) -->
 
 Event Loop 执行顺序如下所示：
 
@@ -1480,7 +1481,8 @@ Event Loop 执行顺序如下所示：
 
 可以把执行栈认为是一个存储函数调用的**栈结构**，遵循先进后出的原则。
 
-![image](https://cdn.nlark.com/yuque/0/2021/gif/1500604/1615476375478-4f0a93a1-de5e-4536-9bbe-4e69c1f91773.gif)
+<!--
+![image](https://cdn.nlark.com/yuque/0/2021/gif/1500604/1615476375478-4f0a93a1-de5e-4536-9bbe-4e69c1f91773.gif) -->
 
 当开始执行 JS 代码时，根据先进后出的原则，后执行的函数会先弹出栈，可以看到，`foo` 函数后执行，当执行完毕后就从栈中弹出了。
 
@@ -1496,7 +1498,7 @@ function bar() {
 bar()
 ```
 
-![img](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615476375462-269c6a54-a21d-460c-aa82-a713ef9a2999.png)
+<!-- ![img](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615476375462-269c6a54-a21d-460c-aa82-a713ef9a2999.png) -->
 
 可以看到报错在 `foo` 函数，`foo` 函数又是在 `bar` 函数中调用的。当使用递归时，因为栈可存放的函数是有**限制**的，一旦存放了过多的函数且没有得到释放的话，就会出现爆栈的问题
 
@@ -1507,7 +1509,7 @@ function bar() {
 bar()
 ```
 
-![img](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615476375388-2867ba62-cf27-4740-91fd-485f0ae12986.png)
+<!-- ![img](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615476375388-2867ba62-cf27-4740-91fd-485f0ae12986.png) -->
 
 ### 9. Node 中的 Event Loop 和浏览器中的有什么区别？process.nextTick 执行顺序？
 
@@ -1515,7 +1517,8 @@ Node 中的 Event Loop 和浏览器中的是完全不相同的东西。
 
 Node 的 Event Loop 分为 6 个阶段，它们会按照**顺序**反复运行。每当进入某一个阶段的时候，都会从对应的回调队列中取出函数去执行。当队列为空或者执行的回调函数数量到达系统设定的阈值，就会进入下一阶段。
 
-![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615476641904-a9763034-9114-4a7c-aa50-1bdb612f2f5e.png)
+<!--
+![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615476641904-a9763034-9114-4a7c-aa50-1bdb612f2f5e.png) -->
 
 （1）**Timers（计时器阶段）**：初次进入事件循环，会从计时器阶段开始。此阶段会判断是否存在过期的计时器回调（包含 setTimeout 和 setInterval），如果存在则会执行所有过期的计时器回调，执行完毕后，如果回调中触发了相应的微任务，会接着执行所有微任务，执行完微任务后再进入 Pending callbacks 阶段。
 
@@ -1567,7 +1570,8 @@ fs.readFile(__filename, () => {
 
 上面都是 macrotask 的执行情况，对于 microtask 来说，它会在以上每个阶段完成前**清空** microtask 队列，下图中的 Tick 就代表了 microtask
 
-![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615476641927-75409d91-38a1-4797-aa75-cb02dd95d732.png)
+<!--
+![image](https://cdn.nlark.com/yuque/0/2021/png/1500604/1615476641927-75409d91-38a1-4797-aa75-cb02dd95d732.png) -->
 
 ```
 setTimeout(() => {
