@@ -3,7 +3,7 @@ home: true
 heroText: 朽木白知识天地
 tagline: 个人知识仓库，持续更新中....
 actionText: 快速开始 →
-actionLink: /interview/css/
+actionLink: /interview/
 features:
   - title: 面试宝典
     details: 汇集了大厂面试宝典，让你轻松获得大厂offer
