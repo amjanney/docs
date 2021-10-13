@@ -4,11 +4,13 @@ module.exports = {
   description:
     '朽木白的学习基地是朽木白的个人博客，用于记录学习笔记、分享音乐、书籍、旅行等个人兴趣的站点。',
   head: [
-    'link',
-    {
-      rel: 'icon',
-      href: '/favicon.ico',
-    },
+    [
+      'link',
+      {
+        rel: 'icon',
+        href: '/favicon.ico',
+      },
+    ],
   ],
   themeConfig: {
     lastUpdated: '上次更新',
