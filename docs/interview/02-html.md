@@ -20,20 +20,20 @@ src 和 href 都是**用来引用外部的资源**，它们的区别如下：
 
 常见的语义化标签：
 
-```
-<header></header>  头部
+```html
+<header>头部</header>
 
-<nav></nav>  导航栏
+<nav>导航栏</nav>
 
-<section></section>  区块（有语义化的div）
+<section>区块（有语义化的div）</section>
 
-<main></main>  主要区域
+<main>主要区域</main>
 
-<article></article>  主要内容
+<article>主要内容</article>
 
-<aside></aside>  侧边栏
+<aside>侧边栏</aside>
 
-<footer></footer>  底部
+<footer>底部</footer>
 ```
 
 ## 3. DOCTYPE(⽂档类型) 的作⽤
