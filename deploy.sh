@@ -16,5 +16,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-# 如果发布到 https://amjanney.github.io
+# dist目录发布到 https://xiumubai.github.io
+# git push -f将本地的代码库推送到远端，并覆盖
 git push -f https://github.com/xiumubai/xiumubai.github.io.git master
