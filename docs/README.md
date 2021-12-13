@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: 朽木白知识天地
-tagline: 个人知识仓库，持续更新中....
+tagline: 朽木不雕难成才，知耻后勇凌云志
 actionText: 快速开始 →
 actionLink: /interview/
 features:
